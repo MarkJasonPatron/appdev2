@@ -53,50 +53,5 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     textAlign: "center",
   },
-  // Step 4: Middle Section
-  middleSection: {
-    flex: 3,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-    resizeMode: "contain",
-  },
-  // Step 5: Bottom Section
-  bottomSection: {
-    flex: 1.5,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: 40,
-  },
-  // Step 6: Sign Up Button
-  button: {
-    backgroundColor: "#FFCC00",
-    width: "100%",
-    paddingVertical: 18,
-    borderRadius: 15,
-    alignItems: "center",
-    marginBottom: 20,
-  },
-  buttonText: {
-    fontWeight: "bold",
-    fontSize: 18,
-    color: "#000000",
-  },
-  // Step 7: Login Text Link
-  loginContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  footerText: {
-    fontSize: 15,
-    color: "#FFFFFF",
-  },
-  loginLink: {
-    color: "#FFCC00",
-    fontWeight: "bold",
-    fontSize: 15,
-  },
+  
 });
