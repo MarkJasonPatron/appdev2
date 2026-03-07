@@ -53,5 +53,16 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     textAlign: "center",
   },
+  // Step 4: Middle Section
+  middleSection: {
+    flex: 3,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "contain",
+  },
   
 });
