@@ -46,10 +46,12 @@ const Login = ({ navigation }) => {
       </View>
 
       {/* Login Button */}
-      <TouchableOpacity style={styles.loginButton}>
+    <TouchableOpacity
+        style={styles.loginButton}
+        onPress={() => navigation.navigate("Todo")}
+    >
         <Text style={styles.loginText}>Log In</Text>
-        <Ionicons name="arrow-forward-circle" size={22} color="#fff" />
-      </TouchableOpacity>
+    </TouchableOpacity>
 
       {/* Signup */}
       <View style={styles.signupRow}>
