@@ -85,5 +85,18 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#000000",
   },
-  
+  // Step 7: Login Text Link
+  loginContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  footerText: {
+    fontSize: 15,
+    color: "#FFFFFF",
+  },
+  loginLink: {
+    color: "#FFCC00",
+    fontWeight: "bold",
+    fontSize: 15,
+  },
 });
