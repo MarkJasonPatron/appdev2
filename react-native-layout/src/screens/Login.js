@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-const Login = () => {
+const Login = ({ navigation }) => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -54,8 +54,8 @@ const Login = () => {
       {/* Signup */}
       <View style={styles.signupRow}>
         <Text style={styles.signupText}>New user?</Text>
-        <TouchableOpacity>
-          <Text style={styles.signupLink}> Sign up</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("Signup")}>
+            <Text style={styles.signupLink}> Sign up</Text>
         </TouchableOpacity>
       </View>
 
