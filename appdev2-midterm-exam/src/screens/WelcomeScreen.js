@@ -71,5 +71,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingBottom: 40,
   },
-
+  // Step 6: Sign Up Button
+  button: {
+    backgroundColor: "#FFCC00",
+    width: "100%",
+    paddingVertical: 18,
+    borderRadius: 15,
+    alignItems: "center",
+    marginBottom: 20,
+  },
+  buttonText: {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: "#000000",
+  },
+  
 });
