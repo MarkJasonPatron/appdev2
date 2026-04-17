@@ -22,7 +22,9 @@ function DetailsScreen() {
 const RootStack = createNativeStackNavigator({
   initialRouteName: 'Home',
   screens: {
-    Home: HomeScreen,
+    Home: {
+      screen: HomeScreen,
+    },
     Details: DetailsScreen,
   },
 });
