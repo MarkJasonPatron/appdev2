@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { View, Text } from 'react-native';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 
 function HomeScreen() {
   return (
@@ -12,12 +11,29 @@ function HomeScreen() {
   );
 }
 
+function DetailsScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Details Screen</Text>
+    </View>
+  );
+}
+
 const RootStack = createNativeStackNavigator({
+  initialRouteName: 'Home',
+  screenOptions: {
+    headerStyle: { backgroundColor: 'tomato' },
+  },
   screens: {
-    Home: HomeScreen,
+    Home: {
+      screen: HomeScreen,
+      options: {
+        title: 'Overview',
+      },
+    },
+    Details: DetailsScreen,
   },
 });
-
 
 const Navigation = createStaticNavigation(RootStack);
 
